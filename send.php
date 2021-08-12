@@ -5,6 +5,8 @@ $to  = 'pryakhin.ms@gmail.com';
 // тема письма
 $subject = 'Письмо с моего сайта';
 
+echo($_POST['name']);
+
 // текст письма
 $message = 'Пользователь' . $_POST['name'] . ' отправил вам письмо:<br />' . $_POST['message'] . '<br />
 Связяться с ним можно по email <a href="mailto:' . $_POST['email'] . '">' . $_POST['email'] . '</a>'
